@@ -1,0 +1,114 @@
+/*GLOBAL*/
+
+:root{
+--Lime_green: hsl(163, 72%, 41%);
+--Bright_red: hsl(356, 69%, 56%);
+--Facebook: hsl(208, 92%, 53%);
+--Twitter: hsl(203, 89%, 53%);
+--Instagram1:  hsl(37, 97%, 70%);
+--Instagram2:  hsl(329, 70%, 58%);
+--YouTube: hsl(348, 97%, 39%);
+
+/* WHITE MODE */
+--White_white_mode: hsl(0, 0%, 100%); /*BG*/
+--Very_pale_blue: hsl(225, 100%, 98%);/*Top BG Pattern*/
+--Light_grayish_blue: hsl(227, 47%, 96%); /*Card BG*/
+--Dark_grayish_blue: hsl(228, 12%, 44%); /*Text*/
+--Very_dark_blue: hsl(230, 17%, 14%);
+
+/* DARK MODE */
+--Very_dark_blue_bg: hsl(230, 17%, 14%);/*BG*/
+--Very_dark_blue_top_bg: hsl(232, 19%, 15%);/*Top BG Pattern*/
+--Dark_desaturated_blue_card_bg: hsl(228, 28%, 20%);/*Card BG*/
+--Desaturated_blue_text: hsl(228, 34%, 66%); /*Text*/
+--White_text: hsl(0, 0%, 100%); /*Text*/
+
+/*TOOGLE*/
+--Toggle: hsl(230, 22%, 74%);
+--Toggle_dm: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background: var(--White_white_mode);
+    color: var(--Dark_grayish_blue);
+}
+
+/*HEADER*/
+
+.header{
+    min-height:250px;
+    background: var(--Very_pale_blue);
+    border-radius: 0px 0px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: -50px;
+      
+}
+
+.header-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: solid 1px var(--Dark_grayish_blue);
+    justify-content: start;
+    padding-bottom: 20px;
+}
+
+.header-title{
+    font-size: 1.6em;
+    font-weight: 600;
+    margin: 5px 0px;
+    color: var(--Very_dark_blue);
+}
+
+.header-subtitle{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.dark-mode{
+    display: flex;
+    justify-content:space-between;
+    padding: 20px 0px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.wrapper{
+    margin: 0px 30px;
+    
+}
+
+.card{
+    background:var(--Light_grayish_blue);
+    border-radius: 8px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    min-height:240px ;
+    overflow: hidden;
+    /* padding: 20px 0px; */
+    /* border-top: solid 4px var(--Facebook);  */
+    text-align: center;
+    /* display: grid; */
+    /* grid-template-columns: 50px auto 50px; */
+}
+.card::before{
+    content: "";
+    display: block;
+    background: var(--Facebook);
+    height:4px;
+    
+    
+}
+
