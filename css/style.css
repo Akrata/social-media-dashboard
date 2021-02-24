@@ -95,7 +95,7 @@ body{
     /* flex-direction: column; */
     /* align-items: center; */
     /* justify-content: space-between; */
-    min-height:240px ;
+    /* min-height:240px ; */
     overflow: hidden;
     /* padding: 20px 0px; */
     /* border-top: solid 4px var(--Facebook);  */
@@ -108,7 +108,35 @@ body{
     display: block;
     background: var(--Facebook);
     height:4px;
+}
+.card-top{
+margin: 20px 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.card-top p{
     
-    
+}
+.card-top img{
+    padding-right: 8px;
+}
+
+.card-mid{
+    min-height: 50px;
+    /* margin: 20px 0px; */
+    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-mid-top{
+    font-size:55px;
+    font-weight: 700;
+    color: var(--Very_dark_blue);
+}
+.card-bot{
+    margin: 20px 0px;
 }
 
