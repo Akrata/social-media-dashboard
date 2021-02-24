@@ -14,13 +14,14 @@
 </head>
 <body>
   <header class="header">
-    <div class="header-header">
+    <div class="header-header wrapper">
       <h1 class="header-title">Social Media Dashboard</h1>
       <p class="header-subtitle">Total Followers: 23,004</p>
     </div>
-    <div class="dark-mode">
+    <div class="dark-mode wrapper">
       <p class="dark-mode-name">Dark Mode</p>
-      <input class="dark-mode-switch" type="checkbox" name="switch" id="">
+      <input class="checkbox" type="checkbox" name="switch" id="switch">
+      <label class="dark-mode-switch" for="switch"></label>
     </div>
   </header>
   <section class="wrapper grid">
@@ -52,41 +53,102 @@
       <p class="card-top"><img src="images/icon-youtube.svg" alt="">Nathan F.</p>
       <p class="card-mid">
         <span class="card-mid-top">8239</span>
-        <span class="card-mid-bot">Followers</span>
+        <span class="card-mid-bot">Subscribers</span>
       </p>
-      <p class="card-bot"> <img src="images/icon-down.svg" alt=""> 144 Today</p>
+      <p class="card-bot down"> <img src="images/icon-down.svg" alt=""> 144 Today</p>
     </article>
 
   </section>
-  <section class="wrapper">
-
+  <div class="overview">
+    <h2>Overview - Today</h2>
+  </div>
+  <section class="wrapper grid">
+    <article class="small-card">
+      <p class="small-card-top">
+        <span class="small-card-title">Page Views</span>
+        <img src="images/icon-facebook.svg" alt="">
+      </p>
+      <p class="small-card-bot">
+        <span class="small-card-number">87</span>
+        <span class="small-card-percentage"> <img src="images/icon-up.svg" alt=""> 3%</span>
+      </p>
+    </article>
+    <article class="small-card">
+      <p class="small-card-top">
+        <span class="small-card-title">Likes</span>
+        <img src="images/icon-facebook.svg" alt="">
+      </p>
+      <p class="small-card-bot">
+        <span class="small-card-number">52</span>
+        <span class="small-card-percentage"> <img src="images/icon-up.svg" alt=""> 3%</span>
+      </p>
+    </article>
+    <article class="small-card">
+      <p class="small-card-top">
+        <span class="small-card-title">Likes</span>
+        <img src="images/icon-instagram.svg" alt="">
+      </p>
+      <p class="small-card-bot">
+        <span class="small-card-number">5462</span>
+        <span class="small-card-percentage"> <img src="images/icon-up.svg" alt=""> 3%</span>
+      </p>
+    </article>
+    <article class="small-card">
+      <p class="small-card-top">
+        <span class="small-card-title">Profile Views</span>
+        <img src="images/icon-instagram.svg" alt="">
+      </p>
+      <p class="small-card-bot">
+        <span class="small-card-number">52k</span>
+        <span class="small-card-percentage"> <img src="images/icon-up.svg" alt=""> 3%</span>
+      </p>
+    </article>
+    <article class="small-card">
+      <p class="small-card-top">
+        <span class="small-card-title">Retweets</span>
+        <img src="images/icon-twitter.svg" alt="">
+      </p>
+      <p class="small-card-bot">
+        <span class="small-card-number">117</span>
+        <span class="small-card-percentage"> <img src="images/icon-up.svg" alt=""> 3%</span>
+      </p>
+    </article>
+    <article class="small-card">
+      <p class="small-card-top">
+        <span class="small-card-title">Likes</span>
+        <img src="images/icon-twitter.svg" alt="">
+      </p>
+      <p class="small-card-bot">
+        <span class="small-card-number">507</span>
+        <span class="small-card-percentage"> <img src="images/icon-up.svg" alt=""> 3%</span>
+      </p>
+    </article>
+    <article class="small-card">
+      <p class="small-card-top">
+        <span class="small-card-title">Likes</span>
+        <img src="images/icon-youtube.svg" alt="">
+      </p>
+      <p class="small-card-bot">
+        <span class="small-card-number">107</span>
+        <span class="small-card-percentage down"> <img src="images/icon-down.svg" alt=""> 3%</span>
+      </p>
+    </article>
+    <article class="small-card">
+      <p class="small-card-top">
+        <span class="small-card-title">Total Views</span>
+        <img src="images/icon-youtube.svg" alt="">
+      </p>
+      <p class="small-card-bot">
+        <span class="small-card-number">1407</span>
+        <span class="small-card-percentage down"> <img src="images/icon-down.svg" alt=""> 12%</span>
+      </p>
+    </article>
 
   </section>
   
   
 
-  <!-- @nathanf
-  
-  Followers
-  
-
-  
-  
-  Followers
-  
-
-  Nathan F.
-  
-  Subscribers
-  
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
+  <!-- 
 
   Likes
   52
