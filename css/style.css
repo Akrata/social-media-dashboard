@@ -142,7 +142,14 @@ body{
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
+    transition: .3s;
+    will-change: transform;
 }
+
+.card:hover{
+    transform: scale(1.1);
+}
+
 .card::before{
     content: "";
     display: block;
@@ -232,6 +239,11 @@ font-weight: 700;
     flex-direction: column;
     justify-content: space-between;
     min-height: 140px;
+    transition: .3s;
+    will-change: transform;
+}
+.small-card:hover{
+    transform: scale(1.1);
 }
 .small-card-top{
     display: flex;
