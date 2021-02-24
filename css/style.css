@@ -82,26 +82,23 @@ body{
     font-size: 0.8rem;
     font-weight: 700;
 }
-
+/*BODY*/
 .wrapper{
     margin: 0px 30px;
     
 }
 
+.grid{
+    display: grid;
+    /* border: solid 1px red; */
+    grid-row-gap: 25px;
+}
+/*CARD*/
 .card{
     background:var(--Light_grayish_blue);
     border-radius: 8px;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    /* min-height:240px ; */
     overflow: hidden;
-    /* padding: 20px 0px; */
-    /* border-top: solid 4px var(--Facebook);  */
     text-align: center;
-    /* display: grid; */
-    /* grid-template-columns: 50px auto 50px; */
 }
 .card::before{
     content: "";
@@ -110,14 +107,14 @@ body{
     height:4px;
 }
 .card-top{
-margin: 20px 0px;
+margin: 25px 0px;
 display: flex;
 justify-content: center;
 align-items: center;
+font-size: 0.8rem;
+font-weight: 700;
 }
-.card-top p{
-    
-}
+
 .card-top img{
     padding-right: 8px;
 }
@@ -125,7 +122,7 @@ align-items: center;
 .card-mid{
     min-height: 50px;
     /* margin: 20px 0px; */
-    border: solid 1px red;
+    /* border: solid 1px red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,7 +133,45 @@ align-items: center;
     font-weight: 700;
     color: var(--Very_dark_blue);
 }
-.card-bot{
-    margin: 20px 0px;
+.card-mid-bot{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.8em;
 }
+
+.card-bot{
+    margin: 25px 0px;
+    color: var(--Lime_green);
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-bot img{
+    margin: 0px 4px;
+}
+
+.card-twitter::before{
+    content: "";
+    display: block;
+    background: var(--Twitter);
+    height:4px;
+}
+.card-instagram::before{
+    content: "";
+    display: block;
+    background-image: linear-gradient(to right, var(--Instagram1) 0%, var(--Instagram2) 100%);
+    height:4px;
+}
+.card-youtube::before{
+    content: "";
+    display: block;
+    background: var(--YouTube);
+    height:4px;
+}
+.card-youtube .card-bot{
+color: red;
+}
+
 
